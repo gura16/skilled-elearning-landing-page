@@ -81,6 +81,7 @@ h1 {
   width: 343px;
   border-radius: 10px;
   background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  margin-left: 16px;
 }
 
 .check {
@@ -97,9 +98,9 @@ h1 {
   height: 56px;
   width: 56px;
   position: absolute;
-  margin-left: 30px;
+  left: 50px;
   display: flex;
-  margin-top: -270px;
+  top: -30px;
 }
 
 .block {
@@ -107,8 +108,9 @@ h1 {
   height: 279px;
   width: 343px;
   border-radius: 10px;
-  margin-top: 40px;
   padding: 28px;
+  position: relative;
+  margin-left: 16px;
 }
 
 .title {
@@ -130,6 +132,7 @@ h1 {
   color: #83869a;
   display: inline-block;
   margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .getstart {
@@ -137,7 +140,6 @@ h1 {
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
-  text-align: left;
   color: #f74780;
   text-decoration: none;
 }
@@ -145,7 +147,7 @@ h1 {
 .end {
   background-color: #13183f;
   height: 120px;
-  width: 375px;
+  width: 100%;
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
@@ -179,6 +181,9 @@ h1 {
 .d-flex {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  gap: 40px 16px;
+  justify-content: center;
 }
 
 @media (min-width: 720px) {
@@ -187,19 +192,32 @@ h1 {
   }
   .head-text {
     width: 398px;
+    margin-top: 105px;
   }
   .avatar-tablet {
     position: absolute;
-    top: -7%;
-    left: 60%;
+    top: -3%;
+    left: 55%;
     width: 600px;
     height: 600px;
   }
   .d-flex {
     display: flex;
+    /* justify-content: center; */
     flex-wrap: wrap;
     margin-top: 123px;
     flex-direction: row;
+    gap: 56px 10px;
+  }
+  .info-text {
+    /* width: 286px; */
+  }
+
+  .check {
+    margin-top: 56px;
+  }
+  .title {
+    margin-top: 10px;
   }
   .end {
     width: 100%;
@@ -213,9 +231,11 @@ h1 {
     height: 259px;
     position: relative;
   }
-  .icon {
+  /* .icon {
     position: absolute;
-  }
+    top: 0;
+    left: 0;
+  } */
 }
 
 @media (max-width: 720px) {
@@ -239,32 +259,43 @@ h1 {
     margin-left: 150px;
   }
   .head {
-    margin-left: 165px;
-    margin-right: 165px;
+    /* margin-left: 165px;
+    margin-right: 165px; */
+    padding: 0 165px;
   }
   .head-text {
     height: 300px;
   }
   .container {
-    height: 350px;
-    width: 322px;
+    height: 322px;
+    width: 350px;
   }
   .avatar-desktop {
-    margin-left: 750px;
-    margin-top: -700px;
+    position: absolute;
+    right: -180px;
+    top: -60px;
+    width: 700px;
+  }
+  .head-text {
+    width: 457px;
   }
   .d-flex {
     display: flex;
+    gap: 80px 30px;
     flex-wrap: wrap;
   }
   .block {
-    width: 322px;
-    height: 350px;
+    width: 350px;
+    height: 322px;
   }
+
   .skill-end {
     margin-left: 165px;
   }
   .start3 {
     margin-right: 165px;
+  }
+  .title {
+    margin-top: 56px;
   }
 }
